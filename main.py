@@ -27,7 +27,7 @@ def returnHighestNumberOfCases():
 			recovered = info['recovered']
 			date = info['date']
 			country=i
-			percentage = str(round((dead/confirmed)*100)) + "%"
+			percentage = str(round((dead/confirmed)*100,2)) + "%"
 	return  (country, confirmed, dead, recovered, percentage, date)
 
 def printHighestNumberOfCases(data):
@@ -52,7 +52,7 @@ def returnHighestNumberOfDeaths():
 			recovered = info['recovered']
 			date = info['date']
 			country=i
-			percentage = str(round((dead/confirmed)*100)) + "%"
+			percentage = str(round((dead/confirmed)*100,2)) + "%"
 	return (country, confirmed, dead, recovered, percentage, date)
 
 def printHighestNumberOfDeaths(data):
@@ -86,7 +86,7 @@ def returnDeathPercentage():
 	confirmed = info['confirmed']
 	dead = info['deaths']
 	recovered = info['recovered']
-	percentage = str(round((dead/confirmed)*100)) + "%"
+	percentage = str(round((dead/confirmed)*100,2)) + "%"
 
 	return (country, confirmed, dead, recovered, percentage, date)
 
@@ -107,7 +107,7 @@ def returnCountryData(country):
 	confirmed = info['confirmed']
 	dead = info['deaths']
 	recovered = info['recovered']
-	percentage = str(round((dead/confirmed)*100)) + "%"
+	percentage = str(round((dead/confirmed)*100,2)) + "%"
 
 	return (country, confirmed, dead, recovered, percentage, date)
 
