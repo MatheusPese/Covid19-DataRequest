@@ -81,11 +81,11 @@ def returnDeathPercentage():
 				percentage = (dead+highestNumberOfDeaths)/(confirmed+highestNumberOfCases)
 				date = info['date']
 				country=i
-		dictionary = covidCases[country]
-		info = dictionary[-1]
-		confirmed = info['confirmed']
-		dead = info['deaths']
-		recovered = info['recovered']
+	dictionary = covidCases[country]
+	info = dictionary[-1]
+	confirmed = info['confirmed']
+	dead = info['deaths']
+	recovered = info['recovered']
 	percentage = str(round((dead/confirmed)*100)) + "%"
 
 	return (country, confirmed, dead, recovered, percentage, date)
