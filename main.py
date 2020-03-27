@@ -34,7 +34,7 @@ def printHighestNumberOfCases(data):
 	country, confirmed, dead, recovered, percentage, date = data
 	mapping = {"country":country, "confirmed":confirmed, "dead":dead, "recovered":recovered,"percentage":percentage, "date":date}
 
-	print("Highest number of cases:")
+	print("\nHighest number of cases:".upper(),end='')
 	print(str(stringInfo).format(**mapping))
 
 def returnHighestNumberOfDeaths():
@@ -59,7 +59,7 @@ def printHighestNumberOfDeaths(data):
 	country, confirmed, dead, recovered, percentage, date = data
 	mapping = {"country":country, "confirmed":confirmed, "dead":dead, "recovered":recovered,"percentage":percentage, "date":date}
 
-	print("Highest number of deaths:")
+	print("Highest number of deaths:".upper(),end='')
 	print(str(stringInfo).format(**mapping))
 
 def returnDeathPercentage():
@@ -94,7 +94,7 @@ def returnDeathPercentage():
 def printDeathPercentage(data):
 	country, confirmed, dead, recovered, percentage, date = data
 	mapping = {"country":country, "confirmed":confirmed, "dead":dead, "recovered":recovered,"percentage":percentage, "date":date}
-	print("Worst case until now:")
+	print("Worst case until now:".upper(),end='')
 	print(str(stringInfo).format(**mapping))
 
 def returnCountryData(country):
